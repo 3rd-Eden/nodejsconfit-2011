@@ -1,0 +1,9 @@
+{
+    "name": "nodejsconfit-socketio-cluster"
+  , "description": "demo of the new redis backend, running a 10+ cluster of socket.io"
+  , "version": "0.0.0"
+  , "dependencies": {
+      "connect": "1.7.1"
+    , "socket.io": "https://github.com/LearnBoost/socket.io/tarball/master"
+  }
+}
