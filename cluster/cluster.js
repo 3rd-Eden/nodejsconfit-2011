@@ -1,7 +1,7 @@
 var cluster = require('cluster');
 
 cluster('./server')
-  // force 4 server instances
+  // force 50 server instances
   .set('workers', 50)
   .use(cluster.stats())
   .use(cluster.pidfiles('pids'))
