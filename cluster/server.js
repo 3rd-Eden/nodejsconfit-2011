@@ -11,9 +11,6 @@ var sio = require('socket.io')
   , RedisStore = sio.RedisStore
   , io = sio.listen(app);
 
-// cluster doesn't seem to work properly with WebSockets, so I disabled them by
-// default.
-io.set('transports', ['xhr-polling', 'jsonp-polling']);
 io.set('store', new RedisStore);
 
 // same shit different server
